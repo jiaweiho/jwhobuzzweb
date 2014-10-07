@@ -1,0 +1,48 @@
+<!--header_section html-->
+<link rel="stylesheet" type="text/css" href="components/components_style.css">
+<link rel="import" href="packages/polymer/polymer.html">
+<link rel="import" href="packages/paper_elements/roboto.html">
+<link rel="import" href="packages/core_elements/core_header_panel.html">
+<link rel="import" href="packages/core_elements/core_toolbar.html">
+<link rel="import" href="packages/core_elements/core_icons.html">
+<link rel="import" href="packages/paper_elements/paper_icon_button.html">
+<link rel="import" href="packages/paper_elements/paper_tabs.html">
+<script>
+    var tabs = document.querySelector('paper-tabs');
+    tabs.addEventListener('core-select', function(e) {
+        console.log("Selected: " + tabs.selected);
+    });
+</script>
+<polymer-element name="header-section" noscript>
+    <template>
+        <content>
+        <core-header-panel fit>
+            <core-toolbar>
+                <paper-icon-button id="navicon"
+                                   icon="menu"></paper-icon-button>
+
+                <span flex two>App Activities of {{user.name}}</span>
+
+                <paper-icon-button id="morebutton" icon="more-vert"></paper-icon-button>
+
+                <span flex>
+                    <paper-tabs id="tabs" selected="all">
+                        <paper-tab name="all">All</paper-tab>
+                        <paper-tab name="favorites">Favorites</paper-tab>
+                    </paper-tabs>
+                </span>
+            </core-toolbar>
+        </core-header-panel>
+        </content>
+    </template>
+    <script type="application/dart" src="components/header_section.dart"></script>
+    <!--<script>
+        Polymer({
+            created: function() {
+                this.user = {
+                    name: 'Wei'
+                }
+            }
+        });
+    </script>-->
+</polymer-element>

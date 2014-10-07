@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif;
+    background-color: #eee;
+    font-family: 'RobotoDraft', sans-serif;
+}
+core-header-panel {
+    background: white;
+    /* height: 100% fails here on some browsers */
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+core-toolbar {
+    background-color: #03A9F4;
+    color: white;
+}
+p {
+    margin: 20px;
+    padding: 80px 20px;
+    border-radius: 20px;
+    background-color: #eee;
+}
+#tabs {
+    width: 100%;
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-transform: uppercase;
+}
+@media (min-width: 481px) {
+    #tabs {
+        width: 200px;
+    }
+    .container {
+        width: 400px;
+    }
+}

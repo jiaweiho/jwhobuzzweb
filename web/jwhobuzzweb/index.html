@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--<html>
+<head>
+    <title>Start page</title>
+    <script src="packages/web_components/platform.js"></script>
+    <script src="packages/web_components/dart_support.js"></script>
+    <!--<link rel="import" href="../packages/paper_elements/paper_input.html">-->
+    <!--<link rel="import" href="../packages/paper_elements/paper_button.html">-->
+
+    <!--<link rel="import" href="components/appdo_post.html">-->
+    <!--<link rel="import" href="components/section_header.html">
+    <!--<link rel="import" href="improved_button.html">-->
+<!--</head>
+<body unresolved>
+
+<section-header></section-header>
+<div style="width: 100px; height: 100px;" relative>
+
+</div>
+<script src="packages/browser/dart.js"></script>
+</body>
+</html>-->
+<!doctype html>
+<html>
+
+<head>
+
+    <title>jwhobuzzweb</title>
+
+    <meta name="viewport"
+          content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+    <script src="packages/web_components/platform.js"> </script>
+    <script src="packages/web_components/dart_support.js"></script>
+
+    <link rel="stylesheet" href="components/components_style.css">
+    <link rel="import" href="packages/core_elements/core_header_panel.html">
+    <!--<link rel="import" href="packages/core_elements/core_toolbar.html">
+    <link rel="import" href="packages/paper_elements/paper_tabs.html">
+    <link rel="import" href="packages/paper_elements/paper_icon_button.html">
+    <link rel="import" href="packages/core_elements/core_icons.html">-->
+    <link rel="import" href="header_section.html">
+
+</head>
+
+<body unresolved>
+
+    <header-section></header-section>
+    <script type="application/dart">export 'package:polymer/init.dart';</script>
+
+<script>
+    var tabs = document.querySelector('paper-tabs');
+    tabs.addEventListener('core-select', function(e) {
+        console.log("Selected: " + tabs.selected);
+    });
+</script>
+</body>
+
+</html>

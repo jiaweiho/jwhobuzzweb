@@ -8,7 +8,7 @@ class User {
 
 @CustomTag('header-section')
 class HeaderSection extends PolymerElement {
-  @observable User user;
+  @published User user;
 
   HeaderSection.created() : super.created() {
     polymerCreated();

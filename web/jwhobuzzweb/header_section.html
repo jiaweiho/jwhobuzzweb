@@ -13,7 +13,7 @@
         console.log("Selected: " + tabs.selected);
     });
 </script>
-<polymer-element name="header-section" noscript>
+<polymer-element name="header-section">
     <template>
         <content>
         <core-header-panel fit>
@@ -21,12 +21,12 @@
                 <paper-icon-button id="navicon"
                                    icon="menu"></paper-icon-button>
 
-                <span flex two>App Activities of {{user.name}}</span>
+                <span flex two>Buzz Actions of {{user.name}}</span>
 
                 <paper-icon-button id="morebutton" icon="more-vert"></paper-icon-button>
 
                 <span flex>
-                    <paper-tabs id="tabs" selected="all">
+                    <paper-tabs id="tabs" selected="all" self-end>
                         <paper-tab name="all">All</paper-tab>
                         <paper-tab name="favorites">Favorites</paper-tab>
                     </paper-tabs>
@@ -36,13 +36,4 @@
         </content>
     </template>
     <script type="application/dart" src="components/header_section.dart"></script>
-    <!--<script>
-        Polymer({
-            created: function() {
-                this.user = {
-                    name: 'Wei'
-                }
-            }
-        });
-    </script>-->
 </polymer-element>
